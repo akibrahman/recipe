@@ -27,6 +27,93 @@
   margin-left: 30px;
   width: 60%;
 }
-.head-wrap img {
+.head-wrap .head-img {
   width: 100%;
+}
+
+/* Main Stylling  */
+.main-wrap {
+  width: 70%;
+  margin: 30px auto;
+  margin-bottom: 100px;
+}
+.main-wrap .title {
+  color: #333;
+  font-family: var(--font-main);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.choice {
+  margin-top: 30px;
+}
+.choice h2 {
+  color: #333;
+  font-family: var(--font-main);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.choice .check-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.choice .check-box .item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  width: 60%;
+}
+.choice .check-box .item label {
+  color: #737373;
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+.choice .check-box .item input {
+  margin-top: 6px;
+}
+.choice .check-box .item label span {
+  color: #333;
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/* instractions  */
+.instructions {
+  margin-top: 30px;
+}
+.instructions > h1 {
+  color: #333;
+  font-family: var(--font-main);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.instruction {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  width: 60%;
+}
+.instruction h1 {
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 2.4rem;
+  font-weight: 700;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2994a;
+  border-radius: 4px;
+}
+.instruction p {
+  color: #000;
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
