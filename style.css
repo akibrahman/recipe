@@ -4,7 +4,7 @@
   padding: 0;
   --font-main: "Playfair Display", serif;
   --font-secondary: "Montserrat", sans-serif;
-  font-size: 9px;
+  font-size: 10px;
 }
 .head-wrap {
   width: 70%;
@@ -36,6 +36,7 @@
   width: 70%;
   margin: 30px auto;
   margin-bottom: 100px;
+  position: relative;
 }
 .main-wrap .title {
   color: #333;
@@ -112,8 +113,57 @@
   border-radius: 4px;
 }
 .instruction p {
-  color: #000;
+  color: #3f3f3f;
   font-family: var(--font-secondary);
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 150%;
+}
+.instruction p span {
+  color: #333333;
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+.card {
+  padding: 55px 50px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+}
+.card .c-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.card .c-item p {
+  color: #bdbdbd;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.card .c-item h3 {
+  color: #333;
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card .c-item h3.orange {
+  color: #f2994a;
+}
+footer {
+  color: #828282;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
