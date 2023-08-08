@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  --font-main: "Playfair Display", serif;
-  --font-secondary: "Montserrat", sans-serif;
+  --font-main: "Playfair Display";
+  --font-secondary: "Montserrat";
   font-size: 10px;
 }
 .head-wrap {
@@ -27,8 +27,17 @@
   margin-left: 30px;
   width: 60%;
 }
+.head-wrap .head-img-fig {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
 .head-wrap .head-img {
   width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.head-wrap .head-img:hover {
+  scale: 1.15;
 }
 
 /* Main Stylling  */
@@ -166,4 +175,38 @@ footer {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 50px;
+}
+
+/*Mobile View*/
+@media screen and (max-width: 767px) {
+  * {
+    font-size: 7px;
+  }
+  .head-wrap {
+    width: 95%;
+    margin-top: 20px;
+  }
+  .main-wrap {
+    width: 95%;
+  }
+  .choice .check-box .item {
+    width: 100%;
+  }
+  .instruction {
+    width: 100%;
+  }
+  .card {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    gap: 5px;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+/*Small devices (landscape phones, 577px and up)*/
+@media screen and (min-width: 577px) and (max-width: 767px) {
 }
